@@ -1,0 +1,16 @@
+{
+  "name": "reverse-proxy",
+  "version": "0.0.0",
+  "description": "serve static file and proxy some url path all other path fall to user callback",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "reverse-proxy",
+    "static-server"
+  ],
+  "author": "",
+  "license": "MIT"
+}
