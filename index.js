@@ -22,7 +22,7 @@ var defaultConfig = {
     publicPath: 'public'
 };
 
-function start(config) {
+function start(config, otherUrlCb) {
     config = assign({}, defaultConfig, config);
 
     proxyCw.configure(config);
@@ -40,7 +40,7 @@ function start(config) {
             proxyCw(req, res);
             return;
         } else {
-            config.otherUrlCb(req, res);
+            otherUrlCb(req, res);
         }
 
     }
